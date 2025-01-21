@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     overflow: hidden auto;
     
@@ -96,6 +95,18 @@ header {
     letter-spacing: 0.225rem;
     background: linear-gradient(90deg, var(--col-accent0), var(--col-accent1));
     color: var(--col-secondary0);
+    opacity: 0.75;
+    transition: transform 75ms ease-in, opacity 100ms ease-in;
+}
+.header-continuebutton:hover {
+    transform: scale(1.065);
+    opacity: 1.0;
+    transition: transform 100ms ease-out, opacity 125ms ease-in;
+}
+.header-continuebutton:active {
+    transform: scale(1.135);
+    opacity: 1.0;
+    transition: transform 200ms ease-out, opacity 225ms ease-in;
 }
 
 .header-line {
@@ -137,9 +148,10 @@ main {
 
 #header-main-fade {
     position: absolute;
-    top: 0; right: 0; left: 0;
-    height: 2rem;
-    background: linear-gradient(0deg, transparent, var(--col-primary0));
+    top: -10rem; right: 0; left: 0;
+    height: 10rem;
+    z-index: -98;
+    background: linear-gradient(180deg, transparent, var(--col-primary0) 75%);
 }
 
 
