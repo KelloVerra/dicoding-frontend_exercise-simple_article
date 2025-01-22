@@ -157,5 +157,62 @@ main {
 
 /* FOOTER */
 footer {
+    position: relative;
+    padding: 0 3rem;
     background-color: var(--col-primary1);
+}
+
+#footer-content {
+    padding-top: 1.75rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footer-dicoding {
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 2.5rem;
+    letter-spacing: 7.5%;
+    background: linear-gradient(90deg, var(--col-accent0), var(--col-accent1));
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-sharing {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.footer-sharing p {
+    margin-top: 0;
+    letter-spacing: 5%;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+#footer-social-sharing {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.325rem;
+}
+
+#footer-social-sharing img {
+    width: 3.5rem;
+}
+#footer-social-sharing img:nth-child(5) {
+    width: 4.5rem;
+}
+
+#footer-rights {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#footer-rights p {
+    font-weight: 300;
+    font-size: .85rem;
+    letter-spacing: 12.5%;
+    margin-bottom: 2rem;
 }
