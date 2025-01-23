@@ -14,6 +14,8 @@ All codes & some assets are specifically made by me, sources of information are 
 | Type | Name | Provider |
 |------|------|----------|
 |Font  |[Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans/license) |Google Fonts|
+|Iconset|[Coolicons](https://coolicons.cool/) |Coolicons|
+|Iconset|Social Media icons & logos |Mads Egmose|
 
 <br>
 <br>
