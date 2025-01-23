@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dicoding Academy Article Final Project : Article</title>
+        <title>Dicoding Academy Final Project</title>
 
         <!-- My Own Styles -->
         <link rel="stylesheet" href="style.css">
@@ -27,7 +27,7 @@
                     <p class="header-peek">
                         Ogoh-Ogoh adalah salah satu tradisi budaya yang sangat khas dan menarik di Bali, Indonesia. Parade ini tidak hanya menjadi ajang perayaan, tetapi juga memiliki makna mendalam dalam menyambut Tahun Baru Saka. Dalam parade ini, patung-patung besar akan di...
                     </p>
-                    <button class="button header-continuebutton">SELANJUTNYA</button>
+                    <button class="button header-continuebutton"><img src="assets/icons/down_arr.svg">SELANJUTNYA</button>
                 </div>
                 <div class="header-line"></div>
                 <section class="header-ex">
@@ -52,17 +52,27 @@
                 </article>
             </div>
             <aside>
-                <!-- TODO : INTERACTIVITY OR DECIDE IF ASIDE SHOULD NOT CONTAIN CREATOR PROFILE -->
-                <h1>DAFTAR ISI</h1>
-                <ul>
+                <div id="aside-mode-switcher">
+                    <button class="button button-active">DAFTAR ISI</button>
+                    <button class="button">INFO DASAR</button>
+                    <button class="button">PROFIL KREATOR</button>
+                </div>
+                <figure class="toc-figure">
+                    <img src="assets/photo0.jpg" alt="ogoh-ogoh">
+                    <div class="overlay"></div>
+                    <figcaption>sumber : infinitymountainbiking.com</figcaption>
+                </figure>
+                <h1 class="toc-title">DAFTAR ISI</h1>
+                <ul class="toc-list">
                     <li><a href="#">Deskripsi singkat</a></li>
                     <li><a href="#">Sejarah</a></li>
-                    <li class="list-inner"><a href="#">Asal Usul</a></li>
+                    <li class="list-item-inset"><a href="#">Asal Usul</li></a>
                     <li><a href="#">Penyelenggaraan</a></li>
-                    <li class="list-inner"><a href="#">Tujuan</a></li>
-                    <li class="list-inner"><a href="#">Pembuatan</a></li>
+                    <li class="list-item-inset"><a href="#">Tujuan</li></a>
+                    <li class="list-item-inset"><a href="#">Pembuatan</li></a>
                     <li><a href="#">Nilai Moral</a></li>
                 </ul>
+                <a class="home" href="#"><img src="assets/icons/home.svg" alt="home button"></a>
             </aside>
         </main>
 
