@@ -88,6 +88,7 @@ header {
     font-weight: 375;
 }
 .header-continuebutton {
+    display:flex;
     margin: 0px 0px .85rem auto;
     font-size: 1.125rem;
     font-weight: 650;
@@ -107,6 +108,12 @@ header {
     transform: scale(1.135);
     opacity: 1.0;
     transition: transform 200ms ease-out, opacity 225ms ease-in;
+}
+.header-continuebutton img {
+    display: inline;
+    width: .85rem;
+    margin-right: .65rem;
+    align-self: center;
 }
 
 .header-line {
@@ -182,6 +189,7 @@ article p {
     letter-spacing: 2.5%;
     line-height: 1.5rem;
     width: fit-content;
+    max-width: 45rem;
 }
 article .separator {
     position: relative;
@@ -193,9 +201,109 @@ article .separator {
 }
 
 aside {
+    position: relative;
     background-color: var(--col-primary1);
+    border: var(--col-accent0) 2px solid;
     border-radius: 1rem;
-    padding: 1rem 2rem;
+    padding: 1.25rem;
+    height: fit-content;
+}
+aside #aside-mode-switcher {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: .5rem;
+    gap: .5rem;
+}
+aside #aside-mode-switcher button {
+    position: relative;
+    padding: .45rem .75rem .35rem;
+    background-color: var(--col-primary1);
+    color: var(--col-secondary0);
+    border: var(--col-accent1) 2px solid;
+    font-weight: 600;
+    letter-spacing: 5%;
+    text-wrap: nowrap;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 100ms ease-in, scale 200ms ease-out;
+}
+aside #aside-mode-switcher button:hover {
+    background-color: color-mix(in srgb, var(--col-accent1) 35%, var(--col-primary1)); /* uses color mix to blend colors */
+    scale: 1.025;
+    transition: background-color 50ms ease-out, scale 50ms ease-in;
+}
+aside #aside-mode-switcher button:active {
+    background-color: var(--col-accent1);
+    scale: 1.075;
+}
+aside #aside-mode-switcher .button-active {
+    padding: .55rem .75rem .45rem;
+    background: linear-gradient(90deg, var(--col-accent0), var(--col-accent1));
+    border: none;
+}
+aside figure {
+    position: relative;
+    margin: 0px;
+}
+aside .toc-title {
+    position: relative;
+    font-size: 2.5rem;
+    letter-spacing: 17.5%;
+    color: var(--col-accent0);
+    margin: -2rem 0px 0px;
+    height: fit-content;
+    z-index: 1;
+}
+aside .toc-figure .overlay {
+    position: absolute;
+    border-radius: .75rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(180deg, transparent 25%, var(--col-primary1) 85%);
+}
+aside .toc-figure img {
+    position: relative;
+    border-radius: .75rem;
+    width: 25rem;
+    margin: 0px;
+}
+aside .toc-figure figcaption {
+    position: absolute;
+    right: .5rem;
+    bottom: 2.25rem;
+    text-align: right;
+    font-size: .85rem;
+    opacity: .65;
+}
+aside .toc-list {
+    margin: .5rem 0px;
+}
+aside .toc-list li a {
+    text-decoration: none;
+    color: var(--col-secondary0);
+}
+aside .toc-list .list-item-inset {
+    margin-left: 3rem;
+}
+aside .toc-list li + li {
+    margin-top: .5rem;
+}
+aside .toc-list li::marker {
+    color: var(--col-accent1);
+}
+aside .toc-list .list-item-inset::marker {
+    color: var(--col-accent0);
+}
+aside .home {
+    position: absolute;
+    right: 1rem;
+    bottom: .5rem;
+}
+aside .home img {
+    width: 2rem;
 }
 
 
@@ -244,7 +352,6 @@ footer {
 
 #footer-social-sharing img {
     width: 3rem;
-    opacity: 1;
 }
 #footer-social-sharing img:nth-child(5) {
     width: 4rem;
