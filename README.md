@@ -3,6 +3,15 @@
 *(+github playground :P)*
 
 <br>
+
+## Student's Notes
+
+Menerapkan javascript secara minimal, berikut fitur yang menggunakannya :
+
+- Alternasi *"slide" informasi* ketika menekan *tombol* di bagian atas *aside*
+
+
+<br>
 <br>
 
 All codes & some assets are specifically made by me, sources of information are cited accordingly
