@@ -13,6 +13,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+        <!-- My Script -->
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -59,6 +62,10 @@
                     </p>
                     <section id="asal-usul">
                         <h1>ASAL-USUL</h1>
+                        <figure>
+                            <img src="assets/photo0.jpg" alt="fotografi ogoh-ogoh di sore hari">
+                            <figcaption>fotografi ogoh-ogoh di sore hari, sumber : tirto.id</figcaption>
+                        </figure>
                         <p>
                             &emsp;Secara etimologi, kata <strong>Ogoh-ogoh</strong> berasal dan berakar dari <em>bahasa Bali</em>, yaitu kata ogah yang artinya "goyang" (ngogah artinya "menggoyang"). Reduplikasi ogah-ogah, atau dalam artian bali, diubah menjadi bentuk <dfn>kruna Dwi Maya Lingga</dfn> artinya "digoyang-goyangkan".
                             <br>&emsp;Soalnya sangat berkaitan dengan cara pengarakan ogoh-ogoh pada umumnya, yaitu dengan cara digoyang-goyangkan agar terlihat seolah-olah bergerak dan <i>menari</i>. Sedikit <i>fun-fact</i>, Kata "ogoh-ogoh" ini termasuk kosakata asli Bali yang relatif baru dan tidak ditemukan definisinya dalam kamus bahasa Bali yang disusun sebelum 1980. Namun pada kamus bahasa Bali terbitan tahun 1991, kata "ogoh-ogoh" telah didefinisikan, sebagai patung yang dibuat dari bambu atau kertas, menyimbolkan <dfn>raksasa</dfn>.
@@ -73,6 +80,10 @@
                     </p>
                     <section id="tujuan">
                         <h1>TUJUAN</h1>
+                        <figure>
+                            <img src="assets/photo1.jpg" alt="fotografi ogoh-ogoh di dalam perlindungan dari terik matahari">
+                            <figcaption>ogoh-ogoh di dalam perlindungan dari terik matahari, sumber : balipost.com</figcaption>
+                        </figure>
                         <p>
                             &emsp;Ogoh-ogoh dibuat sebagai simbol keburukan atau kejahatan yang akan diarak dan dibakar menjelang Hari Raya Nyepi <i>(Tahun Baru Saka)</i>. Ini merupakan tradisi memeriahkan ritual <dfn>Tawur Kesanga</dfn>, salah satu prosesi menyambut Nyepi. Namun, tradisi ogoh-ogoh bukan merupakan suatu kewajiban dalam menyambut Nyepi, melainkan suatu pemeriah ritual.
                             <br>&emsp;Ogoh-ogoh menampilkan bentuk yang menakutkan, mencirikan sifat-sifat negatif (kekerasan, angkara murka, kejahatan), atau adharma (keburukan, kebatilan) yang akan dibakar dalam arti; dimusnahkan. <em>Bhuta Kala</em> merupakan bentuk ogoh-ogoh yang umum, biasa diwujudkan sebagai sosok yang besar (wujud raksasa). Pembakaran ogoh-ogoh pada akhir ritual Tawur Kesanga bermakna <quote>membakar yang jahat</quote>
@@ -80,6 +91,10 @@
                     </section>
                     <section id="pembuatan">
                         <h1>PEMBUATAN</h1>
+                        <figure>
+                            <img src="assets/photo2.jpg" alt="fotografi penampilan ogoh-ogoh di tengah kabut">
+                            <figcaption>penampilan ogoh-ogoh di tengah kabut, sumber : jatengnetwork.com</figcaption>
+                        </figure>
                         <p>
                             &emsp;Dilansir dari wikipedia, “Tradisi ogoh-ogoh seperti yang dikenal sekarang ini merupakan kebudayaan yang relatif baru. Diperkirakan bahwa tradisi ini berkembang pada dasawarsa 1980-an, meskipun pada tahun-tahun sebelumnya ogoh-ogoh sudah ada, tetapi masih dalam bentuk yang sangat sederhana dan belum dikenal secara luas.
                             <br>&emsp;Tradisi lelakut, patung pelebonan, hingga Barong Landung ditengarai sebagai akar tradisi dan inspirasi bagi perkembangan awal ogoh-ogoh. Saat ini, ogoh-ogoh menjadi ciri khas penyambutan Nyepi dan dilombakan hampir setiap tahun di Bali dalam tingkat yang berbeda-beda.”
@@ -98,27 +113,29 @@
             </div>
             <aside>
                 <div id="aside-mode-switcher">
-                    <button class="button button-active">DAFTAR ISI</button>
-                    <button class="button">INFO DASAR</button>
-                    <button class="button">PROFIL KREATOR</button>
+                    <button class="button button-active" onClick="handleAsideSwitch(ASIDE_STATES.TOC)">DAFTAR ISI</button>
+                    <button class="button" onClick="handleAsideSwitch(ASIDE_STATES.PROFILE)">PROFIL KREATOR</button>
                 </div>
-                <figure class="toc-figure">
-                    <img src="assets/photo0.jpg" alt="ogoh-ogoh">
-                    <div class="overlay"></div>
-                    <figcaption>sumber : infinitymountainbiking.com</figcaption>
-                </figure>
-                <h1 class="toc-title">DAFTAR ISI</h1>
-                <ul class="toc-list">
-                    <li><a href="#deskripsi-singkat">Deskripsi singkat</a></li>
-                    <li><a href="#sejarah">Sejarah</a></li>
-                    <li class="list-item-inset"><a href="#asal-usul">Asal Usul</li></a>
-                    <li><a href="#penyelenggaraan">Penyelenggaraan</a></li>
-                    <li class="list-item-inset"><a href="#tujuan">Tujuan</li></a>
-                    <li class="list-item-inset"><a href="#pembuatan">Pembuatan</li></a>
-                    <li><a href="#pesan-moral">Nilai Moral</a></li>
-                    <li><a href="#referensi">Referensi</a></li>
-                </ul>
-                <a class="home" href="#"><img src="assets/icons/home.svg" alt="home button"></a>
+                <div id="aside-content">
+                    <figure class="toc-figure">
+                        <img src="assets/photo0.jpg" alt="ogoh-ogoh">
+                        <div class="overlay"></div>
+                        <figcaption>sumber : infinitymountainbiking.com</figcaption>
+                    </figure>
+                    <h1 class="toc-title">DAFTAR ISI</h1>
+                    <ul class="toc-list">
+                        <li><a href="#deskripsi-singkat">Deskripsi singkat</a></li>
+                        <li><a href="#sejarah">Sejarah</a></li>
+                        <li class="list-item-inset"><a href="#asal-usul">Asal Usul</li></a>
+                        <li><a href="#penyelenggaraan">Penyelenggaraan</a></li>
+                        <li class="list-item-inset"><a href="#tujuan">Tujuan</li></a>
+                        <li class="list-item-inset"><a href="#pembuatan">Pembuatan</li></a>
+                        <li><a href="#pesan-moral">Nilai Moral</a></li>
+                        <li><a href="#referensi">Referensi</a></li>
+                    </ul>
+                    <a class="home" href="#"><img src="assets/icons/home.svg" alt="home button"></a>
+                    <div class="aside-content-overlay"></div>
+                </div>
             </aside>
         </main>
 
