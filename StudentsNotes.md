@@ -10,6 +10,10 @@ Catatan tambahan :
 
 - Elemen tombol button di aside menggunakan teknik menyetel href = "#" agar webpage otomatis ke bagian paling atas tanpa menyebabkan webpage ke render ulang
 
+- Antarmuka web responsif
+
+- Tolong nyalakan javascript ketika mengakses
+
 
 <br>
 

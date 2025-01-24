@@ -1,6 +1,5 @@
-# Hi! Its in under construction!
-### This is my final module project submission
-*(+github playground :P)*
+# An article about an upcoming parade over at Bali!
+### My final module project submission
 
 <br>
 
@@ -8,7 +7,7 @@
 
 Menerapkan javascript secara minimal, berikut fitur yang menggunakannya :
 
-- Alternasi *"slide" informasi* ketika menekan *tombol* di bagian atas *aside*
+- Alternasi *"slide" informasi* ketika menekan salah satu *tombol* di bagian atas *aside*
 
 
 <br>
