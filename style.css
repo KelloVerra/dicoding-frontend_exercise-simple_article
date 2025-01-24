@@ -12,10 +12,12 @@ body {
     --col-primary1: #302C38;
     --col-secondary0: #E9F5FF;
 
-    --col-shadow0: #08050D;
+    --col-shadow0: rgba(8, 5, 13, 0.45);
 
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
+
+    overflow-y: scroll;
 }
 
 
@@ -186,7 +188,7 @@ article > h1 {
     width: fit-content;
 }
 article section {
-    margin: 0 0 1rem 3.5rem;
+    margin: .5rem 0 1rem 3.5rem;
     width: fit-content;
 }
 article section > h1 {
@@ -222,12 +224,13 @@ article .separator {
 
 aside {
     position: sticky;
-    top: 2.25rem;
+    top: 1.5rem;
     background-color: var(--col-primary1);
     border: var(--col-accent0) 2px solid;
     border-radius: 1rem;
     padding: 1.25rem;
     height: fit-content;
+    box-shadow: 30px 30px 35px var(--col-shadow0);
 }
 aside #aside-mode-switcher {
     position: relative;
