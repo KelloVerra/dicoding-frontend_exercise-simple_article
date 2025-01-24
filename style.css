@@ -57,7 +57,6 @@ header {
 }
 
 .header-title-wrapper {
-    /* background-color: #08050D; */
     display: flex;
     flex-flow: column nowrap;
     margin: 0px 10rem 0px auto;
@@ -337,7 +336,6 @@ footer {
     padding: 0 3rem;
     background-color: var(--col-primary1);
 }
-
 #footer-content {
     padding-top: 1.75rem;
     display: flex;
@@ -355,11 +353,9 @@ footer {
     background-clip: text;
     color: transparent;
 }
-
 .footer-sharing {
     margin-left: auto;
 }
-
 .footer-sharing p {
     margin: 0 0 0.45rem;
     letter-spacing: 5%;
@@ -373,7 +369,6 @@ footer {
     flex-flow: row nowrap;
     gap: 1.125rem;
 }
-
 #footer-social-sharing img {
     width: 3rem;
 }
@@ -388,7 +383,6 @@ footer {
     max-width: 1448px;
     margin: 0px auto;
 }
-
 #footer-rights p {
     font-weight: 300;
     font-size: .85rem;
