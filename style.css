@@ -213,6 +213,14 @@ article p {
     width: fit-content;
     max-width: 45rem;
 }
+article a {
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-size: 1.275rem;
+    color: var(--col-accent1);
+    letter-spacing: 7.5%;
+    font-style: italic;
+}
 article figure img {
     width: 100%;
     max-width: 35rem;
